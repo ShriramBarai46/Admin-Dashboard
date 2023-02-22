@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url(../images/background_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+     background: rgba(47, 210, 215, 0.5);
+    background-image: linear-gradient(0deg, rgba(232, 218, 218, 0.8) 0, transparent 60%, rgba(47, 210, 215, 0.5));
+   
+}
+
+section {
+    display: flex;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: -200px;
+    /* This value can be adjusted depending on the width of your sidebar */
+    width: 200px;
+    /* This value can also be adjusted to fit your design */
+    height: 100vh;
+    background-color: #f1f1f1;
+    transition: left 0.3s ease-in-out;
+    box-shadow: 10px 10px 10px rgba(227, 215, 215, 0.434);
+    padding: 1rem;
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+#toggle-sidebar {
+    position: absolute;
+
+}
+
+
+.navbar img {
+    margin-left: 10px;
+    width: 150px;
+    margin-bottom: 20px;
+    height: 150px;
+    border-radius: 10%;
+}
+
+.center-nav,
+.bottom-nav {
+    list-style: none;
+}
+
+.center-nav a,
+.bottom-nav a {
+    color: #000;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.center-nav li,
+.bottom-nav li {
+    padding-bottom: 1rem;
+    margin: 5px 0;
+    transition: all 0.3s;
+}
+
+.center-nav li:hover,
+.bottom-nav li:hover {
+    color: rgb(42, 158, 193);
+    transform: translate(0.5rem);
+}
+
+.bottom-nav {
+    margin-top: 0.5rem;
+}
+
+
+/* ======= Main Content Styling ======= */
+.bars {
+    cursor: pointer;
+}
+
+.main-content {
+    width: 100vw;
+    padding: 10px;
+}
+
+.main-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* .bar {
+    margin: 3px 0;
+    width: 20px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #000;
+} */
+
+.fa-bars {
+    width: 20px;
+    border-radius: 4px;
+}
+
+.input {
+    width: 100%;
+    text-align: center;
+}
+
+.input input {
+    width: 90%;
+    outline: none;
+    border: none;
+    border: 1px solid rgb(5, 119, 157);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.user {
+    width: 50px;
+    position: relative;
+    transform: scaleX(-1);
+
+}
+
+.user img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 6px 5px #ccc;
+}
+
+.dashboard {
+    padding: 10px;
+}
+
+.heading {
+    margin: 10px 0;
+}
+
+.color-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box {
+    display: flex;
+    height: 120px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    /* padding: 1rem; */
+    margin: 10px 5px;
+    padding: 0.5rem;
+}
+
+.box i {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+.box p {
+    line-height: 30px;
+}
+
+.skyblue {
+    background-color: rgb(46, 114, 250);
+}
+
+.yellow {
+    background-color: rgb(170, 175, 147);
+}
+
+.purple {
+    background-color: rgb(33, 238, 211);
+}
+
+.red {
+    background-color: rgb(29, 202, 72);
+}
+
+/* ======== Styling Recent Activity ======== */
+.activity {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.activity table {
+    width: 100%;
+}
+
+tr {
+    row-gap: 0px;
+}
+
+th {
+    line-height: 40px;
+    text-align: left;
+}
+
+td {
+    line-height: 28px;
+}
+
+td,
+th {
+    margin: 0;
+}

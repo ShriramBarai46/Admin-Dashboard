@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Admin Dashboard</title>
+</head>
+
+<body>
+    <section>
+
+
+        <!-- User Sidebar Starts from Here -->
+        <div class="navbar " id="sidebar">
+
+            <img src="./images/logo.jpg" alt="">
+            <ul class="center-nav">
+                <li><i class="fa-solid fa-house"></i><a href="#">Dashboard</a></li>
+                <li><i class="fa-solid fa-copy"></i><a href="#"> Content </a></li>
+                <li><i class="fa-sharp fa-solid fa-chart-simple"></i><a href="#"> Analytics </a></li>
+                <li><i class="fa-solid fa-thumbs-up"></i><a href="#"> Likes </a></li>
+                <li><i class="fa-solid fa-comment"></i><a href="#"> Comments </a></li>
+                <li><i class="fa-sharp fa-solid fa-floppy-disk"></i><a href="#"> Saves </a></li>
+                <li><i class="fa-solid fa-share"></i><a href="#"> Share </a></li>
+                <li><i class="fa-solid fa-rectangle-ad"></i><a href="#"> Ads </a></li>
+            </ul>
+
+            <ul class="bottom-nav">
+                <!-- <hr> -->
+                <li><i class="fa-solid fa-gear"></i><a href="#"> Settings </a></li>
+                <li><i class="fa-solid fa-power-off"></i><a href="#"> Logout </a></li>
+            </ul>
+        </div>
+
+        <!-- User Top Naviagation Starts from Here -->
+
+        <div class="main-content">
+            <div class="main-top">
+                <div class="bar" id="toggle-sidebar">
+                    <div class="bar"><i class="fa-solid fa-bars"></i></div>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Search Client Details">
+                </div>
+                <div class="user">
+                    <img src="./images/shriram.png" alt="">
+                </div>
+            </div>
+
+            <div class="dashboard">
+                <h2 class="heading">Dashboard</h2>
+                <div class="color-box">
+                    <div class="box skyblue">
+                        <p><i class="fa-solid fa-thumbs-up"></i></p>
+                        <p>Total Likes</p>
+                        <h3>50,120</h3>
+                    </div>
+                    <div class="box yellow">
+                        <p><i class="fa-solid fa-comment"></i></p>
+                        <p> Total Comments </p>
+                        <h3> 25,120 </h3>
+                    </div>
+                    <div class="box purple">
+                        <p> <i class="fa-solid fa-share"></i> </p>
+                        <p> Total Share </p>
+                        <h3> 10,320 </h3>
+                    </div>
+                    <div class="box red">
+                        <p> <i class="fa-sharp fa-solid fa-floppy-disk"></i> </p>
+                        <p> Total Saves </p>
+                        <h3> 20,129 </h3>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- User Activity Starts from Here -->
+            <div class="activity">
+                <h2 class="heading">Recent Activity</h2>
+                <div class="activities">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th> Name </th>
+                                <th> Email </th>
+                                <th>Session Start Date</th>
+                                <th>Session End Date </th>
+                                <th> Status </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Shriram Barai</td>
+                                <td>shrirambarai46@gmail.com </td>
+                                <td>07/02/2023</td>
+                                <td>21/03/2023</td>
+                                <td> Active </td>
+                            </tr>
+                            <tr>
+                                <td>John</td>
+                                <td>john89@gmail.com </td>
+                                <td>10/02/2023</td>
+                                <td>21/03/2023</td>
+                                <td> Active </td>
+                            </tr>
+                            <tr>
+                                <td>Mehar Makad</td>
+                                <td>meharmakad@gmail.com </td>
+                                <td>25/02/2023</td>
+                                <td>21/03/2023</td>
+                                <td> Active </td>
+                            </tr>
+                            <tr>
+                                <td> Rakesh Kumar </td>
+                                <td>rakesh@gmail.com </td>
+                                <td>01/01/2023</td>
+                                <td>21/03/2023</td>
+                                <td>Old client</td>
+                            </tr>
+                            <tr>
+                                <td> Pravin Singh </td>
+                                <td>pravin@gmail.com </td>
+                                <td>01/02/2023</td>
+                                <td>21/03/2023</td>
+                                <td>Renew</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script>
+    $(document).ready(function () {
+        $('#toggle-sidebar').click(function () {
+            $('#sidebar').toggleClass('active');
+        });
+    });
+
+</script>
+
+</html>
